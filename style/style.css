@@ -1,0 +1,287 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "bahnschrift";
+    src: url(../font/bahnschrift.ttf), format("truetype");
+    font-weight: normal;
+
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "bahnschrift",sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+    box-sizing: border-box;
+    font-style: light;
+    /**/
+}
+
+@media screen and (max-width:768px){    /*Para mobile*/
+
+    body, html {
+        background-color: #0e0316 ;
+        height: 100vh;
+        width: 95vw;
+    }
+    
+    main{
+        position: relative;
+        height: 95vh;
+        width: 97vw;
+    }
+    
+    section#cadastro > div#imagem{
+        background: #5f2c82 url(../imagens/fundo.jpg);
+        height: 200px;
+        background-size: cover;
+        padding: 0px;
+        background-position: right top;
+        display: block;
+    }
+    
+    
+    section#cadastro {
+        background-color: rgb(204, 204, 204);
+        width: 380px;
+        height: auto;
+        left: 50%;
+        top: 5%;
+        position: absolute;
+        overflow: hidden;
+        transform: translate(-50%);
+        box-shadow: 0px 0px 10px rgba(43, 4, 4, 0.363);
+        transition: width .3s, height .3s;
+        transition-timing-function: ease;
+        
+    }
+    
+    section#cadastro > div#formulario {
+        padding: 15px;
+        display: block;
+    }
+    
+    section#cadastro > div#formulario > h1 {
+        font-weight: bold;
+        text-align: center;
+        padding: 5px;
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+    section#cadastro > div#formulario > p {
+        text-align: justify;
+        padding: 10px;
+    }
+    
+    fieldset.dados{
+        height: auto;
+        font-size: 1rem;
+        border: 1px gray solid;
+        border-bottom: 1px gray solid;
+        border-left: 0px;
+        border-right: 0px;
+        border-bottom: 0px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding-bottom: 10px;
+    }
+    fieldset.dados > div {
+        padding: 8px;
+    }
+    fieldset.dados > div > p {
+        float: left;
+    }
+    fieldset.dados > div > input {
+        width: 220px;
+        border: white;
+        height: 25px;
+        float:right;
+    }
+    fieldset.dados > div > select {
+        width: 220px;
+        border: white;
+        height: 25px;
+        float:right;
+    }
+    fieldset.dados > div#estadocivildiv > input {
+        width: 10px ;
+        float: left;
+        padding: 20px;
+    }
+    fieldset.dados > div#whatsetelegram > input {
+        width: auto;
+        float: none;
+        background-color: green;
+    }
+    
+    div.botao > input {
+        display: block;
+        background-color: black;
+        color: white;
+        width: 350px;
+        height: auto;
+        border-radius: 8px;
+        font-size: 1.5em;
+        border: none;
+        margin-bottom: 10px;
+    }
+    div.botao > input:active {
+        background-color: green;
+    }
+    div.botao > input#limpar {
+        display: block;
+        background-color: lightslategray;
+    }
+    div.botao > input#limpar:active {
+        background-color: white;
+        color: black;
+    }
+    div.msg > p > textarea {
+        border: 1px solid rgb(255, 252, 252);
+        min-width: auto;
+        text-align: justify;
+        display: block;
+    }
+    #rodape{
+        font-size: 0.5rem;
+        text-align: right;
+        margin-top: 15px;
+    }
+
+}
+
+
+
+
+/*MEDIA QUERRIES PARA TELAS MAIORES*/
+@media screen and (min-width: 768px) {
+    body, html {
+        background-color: #0e0316 ;
+        height: 100vh;
+        width: 95vw;
+    }
+    
+    main{
+        position: relative;
+        height: 95vh;
+        width: 97vw;
+    }
+    
+    section#cadastro > div#imagem{
+        background: #5f2c82 url(../imagens/fundo.jpg);
+        height: 200px;
+        background-size: cover;
+        padding: 0px;
+        background-position: right top;
+        display: block;
+    }
+    
+    
+    section#cadastro {
+        background-color: rgb(218, 218, 218);
+        width: 800px;
+        height: auto;
+        left: 50%;
+        top: 5%;
+        position: absolute;
+        overflow: hidden;
+        transform: translate(-50%);
+        box-shadow: 0px 0px 10px rgba(43, 4, 4, 0.363);
+        transition: width .3s, height .3s;
+        transition-timing-function: ease;
+        
+    }
+    
+    section#cadastro > div#formulario {
+        padding: 15px;
+        display: block;
+    }
+    
+    section#cadastro > div#formulario > h1 {
+        font-weight: bold;
+        text-align: center;
+        padding: 5px;
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+    section#cadastro > div#formulario > p {
+        text-align: justify;
+        padding: 10px;
+    }
+    
+    fieldset.dados{
+        height: auto;
+        font-size: 1rem;
+        border: 1px rgb(82, 79, 79) solid;
+        border-bottom: 1px gray solid;
+        border-left: 0px;
+        border-right: 0px;
+        border-bottom: 0px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding-bottom: 10px;
+    }
+    fieldset.dados > div {
+        padding: 8px;
+    }
+    fieldset.dados > div > p {
+        float: left;
+    }
+    fieldset.dados > div > input {
+        width: 85%;
+        border: 1px solid rgb(255, 255, 255);
+        height: 25px;
+        float:right;
+    }
+    fieldset.dados > div > select {
+        width: 85%;
+        border: 1px solid rgb(255, 255, 255);
+        height: 25px;
+        float:right;
+    }
+    fieldset.dados > div#estadocivildiv > input {
+        width: 10px ;
+        float: left;
+        padding: 20px;
+    }
+    fieldset.dados > div#whatsetelegram > input {
+        width: auto;
+        float: none;
+        background-color: green;
+    }
+    
+    div.botao > input {
+        border: none;
+        background-color: black;
+        color: white;
+        width: 200px;
+        height: auto;
+        border-radius: 8px;
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+    div.botao > input[type=reset]{
+        background-color: darkred;
+    }
+
+    div.botao > input[type=submit]:hover {
+        background-color: green;
+    }
+    div.botao > input[type=reset]:hover {
+        background-color: white;
+        color: black;
+    }
+    div.msg > p > textarea {
+        border: 1px solid rgb(255, 255, 255);
+        text-align: justify;
+        display: block;
+        width: 99%;
+    }
+    p#rodape{
+        text-align: right;
+        font-size: 0.8rem;
+        color: darkslategrey;
+    }
+}
+    
